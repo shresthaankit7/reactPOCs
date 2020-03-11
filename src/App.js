@@ -4,6 +4,7 @@ import './App.css';
 
 import Greet from './components/Greet';
 import Namaste from './components/Namaste';
+import Message from './components/Message';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Greet name="Scholes" heroName="SuperMan"/>
         <Namaste name="England"/>
         <Namaste name="Nepal"/>
+        <Message/>
       </div>
     </div>
   );
