@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Greet from './components/Greet';
+import Namaste from './components/Namaste';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <Greet name="Rooney" heroName="Batman">
+          <button>Click Me</button>
+        </Greet>
+        <Greet name="Scholes" heroName="SuperMan"/>
+        <Namaste name="England"/>
+        <Namaste name="Nepal"/>
+      </div>
     </div>
   );
 }
