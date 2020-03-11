@@ -9,11 +9,19 @@ class Message extends Component{
         }
     }
 
+    /* Toggle Message*/
     changeMessage(){
-        this.setState({
-            message: 'Thank you for subscribing!'
-        })
+        if(this.state.message==='Welcome Visitor'){
+            this.setState({
+                message: 'Thank you for subscribing!!'
+            })
+        }else{
+            this.setState({
+                message: 'Welcome Visitor'
+            })
+        }
     }
+
     render(){
         return (
             <div>
