@@ -5,6 +5,7 @@ import './App.css';
 import Greet from './components/Greet';
 import Namaste from './components/Namaste';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 function App() {
   return (
@@ -24,13 +25,22 @@ function App() {
         </a>
       </header>
       <div>
+        {/* Greet Component */}
         <Greet name="Rooney" heroName="Batman">
           <button>Click Me</button>
         </Greet>
         <Greet name="Scholes" heroName="SuperMan"/>
+
+        {/* Namaste Component */}
         <Namaste name="England"/>
         <Namaste name="Nepal"/>
+        
+        {/* Message Component */}
         <Message/>
+
+        {/*Testing Counters */}  
+        <Counter/>
+
       </div>
     </div>
   );
