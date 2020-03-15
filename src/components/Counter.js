@@ -2,12 +2,8 @@ import React,{Component} from 'react';
 
 const counterStyle = {
     padding:'10px',
-    float:'left'
-}
-
-const halfDiv = {
-    width:'50%',
-    float:'right'
+    float:'left',
+    width:'50%'
 }
 
 class Counter extends Component{
@@ -36,12 +32,10 @@ class Counter extends Component{
     render(){
         return (
             <div>
-                <div style={counterStyle,{width:'50%'}}>
+                <div style={counterStyle}>
                     Counter: {this.state.count}
                 </div>
-                <div style={halfDiv}>
-                    <button onClick={()=>this.incrementFive()}>Incremental Click</button>
-                </div>
+                <button onClick={()=>this.incrementFive()}>Incremental Click</button>
             </div>
         )
     }
