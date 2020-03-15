@@ -1,12 +1,13 @@
 import React,{Component} from 'react';
 
 const counterStyle = {
-    padding:'10px'
+    padding:'10px',
+    float:'left'
 }
 
 const halfDiv = {
     width:'50%',
-    float:'left'
+    float:'right'
 }
 
 class Counter extends Component{
@@ -18,16 +19,24 @@ class Counter extends Component{
         }
     }
     
+    increment(){
+        this.setState((prevState)=>({
+            count: prevState.count+1
+        }))
+    }
+
     incrementFive(){
-        this.setState({
-            count : this.state.count + 1
-        })
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
     }
     
     render(){
         return (
             <div>
-                <div style={counterStyle,halfDiv}>
+                <div style={counterStyle,{width:'50%'}}>
                     Counter: {this.state.count}
                 </div>
                 <div style={halfDiv}>
