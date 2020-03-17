@@ -4,7 +4,9 @@ import '../stylesheets/text.css';
 
 class Namaste extends Component {
     render(){
-        return <h1 className="font">Namaste {this.props.name}.</h1>
+        return <div className="namasteDiv">
+                <h1 className="font">Namaste {this.props.name}.</h1>
+            </div>
     }
 }
 

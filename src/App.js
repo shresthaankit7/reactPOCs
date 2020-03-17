@@ -26,10 +26,12 @@ function App() {
       </header>
       <div>
         {/* Greet Component */}
-        <Greet name="Rooney" heroName="Batman">
-          <button>Click Me</button>
-        </Greet>
-        <Greet name="Scholes" heroName="SuperMan"/>
+        <div>
+          <Greet name="Rooney" heroName="Batman">
+            <button>Click Me</button>
+          </Greet>
+          <Greet name="Scholes" heroName="SuperMan"/>
+        </div>
 
         {/* Namaste Component */}
         <Namaste name="England"/>
