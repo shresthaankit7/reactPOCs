@@ -5,7 +5,9 @@ import './App.css';
 import Greet from './components/Greet';
 import Namaste from './components/Namaste';
 import Message from './components/Message';
-import Counter from './components/Counter';
+import Counter from './components/Counter'; 
+import EventBind from './components/EventBind';
+import FunctionClick from './components/FunctionClick';
 
 function App() {
   return (
@@ -43,7 +45,13 @@ function App() {
         {/*Testing Counters */}  
         <Counter/>
 
-      </div>
+        { /*Function click*/}
+        <FunctionClick/>
+
+        {/*Class Event Bind*/}
+        <EventBind/>
+
+      </div> 
     </div>
   );
 }
