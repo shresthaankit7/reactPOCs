@@ -5,7 +5,8 @@ import './App.css';
 import Greet from './components/Greet';
 import Namaste from './components/Namaste';
 import Message from './components/Message';
-import Counter from './components/Counter'; 
+import Counter from './components/Counter';
+import Form from './components/Forms/Form';
 import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
 
@@ -50,6 +51,9 @@ function App() {
 
         {/*Class Event Bind*/}
         <EventBind/>
+
+        {/* Form Component */}
+        <Form/>
 
       </div> 
     </div>
