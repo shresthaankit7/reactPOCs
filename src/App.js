@@ -7,55 +7,69 @@ import Namaste from './components/Namaste';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import Form from './components/Forms/Form';
+import Table from './components/Fragments/Table';
 import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <div className="App-scroll">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
         </a>
-      </header>
-      <div>
-        {/* Greet Component */}
+        </header>
         <div>
-          <Greet name="Rooney" heroName="Batman">
-            <button>Click Me</button>
-          </Greet>
-          <Greet name="Scholes" heroName="SuperMan"/>
+          {/* Greet Component */}
+          <div>
+            <Greet name="Rooney" heroName="Batman">
+              <button>Click Me</button>
+            </Greet>
+            <Greet name="Scholes" heroName="SuperMan" />
+          </div>
+
+          {/* Namaste Component */}
+          <Namaste name="England" />
+          <Namaste name="Nepal" />
+
+          {/* Message Component */}
+          <Message />
+
+          {/*Testing Counters */}
+          <Counter />
+
+          { /*Function click*/}
+          <FunctionClick />
+
+          {/*Class Event Bind*/}
+          <EventBind />
+
+          {/* Form Component */}
+          <Form />
+
         </div>
+      </div>
+      <div>
+        <Table/>
+      </div>
+      <div>
+        <footer>
+          <p>Please don't push this to production</p>
+          <p>Demo in progress</p>
+        </footer>
 
-        {/* Namaste Component */}
-        <Namaste name="England"/>
-        <Namaste name="Nepal"/>
-        
-        {/* Message Component */}
-        <Message/>
+      </div>
 
-        {/*Testing Counters */}  
-        <Counter/>
-
-        { /*Function click*/}
-        <FunctionClick/>
-
-        {/*Class Event Bind*/}
-        <EventBind/>
-
-        {/* Form Component */}
-        <Form/>
-
-      </div> 
     </div>
   );
 }
