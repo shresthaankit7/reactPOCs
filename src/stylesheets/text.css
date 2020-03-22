@@ -1,5 +1,10 @@
 .font {
     margin: 40px;
-    border: 5px dotted green;
+    border: 5px solid green;
     color: blue;
   }
+
+.namasteDiv {
+  width: 100%;
+  clear: both
+}
