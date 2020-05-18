@@ -13,7 +13,7 @@ class Message extends Component{
     changeMessage(){
         if(this.state.message==='Welcome Visitor'){
             this.setState({
-                message: 'Thank you for subscribing!!'
+                message: 'Thank you for subscribing!'
             })
         }else{
             this.setState({
