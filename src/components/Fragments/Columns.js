@@ -1,7 +1,18 @@
 import React from 'react';
 
 function Columns() {
-    const dataArray = ['Bill', 'Jeff']
+    const dataArray = ['Bill', 'Jeff','TestingTesting']
+
+    var tags = [ {"Value":"SPOT","Key":"coreMarketType"}, {"Value":"yzc","Key":"aaaa"},{"Value":"QC","Key":"Processing Environment"}]
+    console.log("Tags :: " + JSON.stringify(tags,null,2))
+
+    tags.forEach(function(tag){
+        if( tag.Key === "Processing Environment"){
+            console.log("Key: " + tag.Key)
+            console.log("Value: " + tag.Value)
+        }
+    });
+
     return (
         <React.Fragment>
             <tr>
