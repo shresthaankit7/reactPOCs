@@ -2,7 +2,8 @@ import React from 'react';
 
 const greetStyle = {
     width: '50%',
-    float: 'left'
+    float: 'left',
+    clear: 'right'
 }
 
 const Greet = (props) => {
